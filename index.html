@@ -112,6 +112,24 @@
 
 
 <script>
+let songlength = document.querySelectorAll('.song').length;
+
+for(let i = 0; i < songlength; i++){
+    let demo = document.querySelectorAll('.song')[i].addEventListener('click',playsong);
+}
+
+let song1 = new Audio();
+song1.src = "music/1.mp3";
+
+function playsong(){
+    song1.play();
+}
+
+
+
+
+
+
 
 
 
